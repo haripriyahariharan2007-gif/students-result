@@ -65,7 +65,10 @@ Approved by AICTE & Affiliated to Anna University
 
 
 <script>
-https://opensheet.elk.sh/1rAx8Zys1L2esZx401HGepxCSFyla6Zmy6uS8p9MhpMQ/Sheet1
+async function getData() {
+  const res = await fetch("https://opensheet.elk.sh/1rAx8Zys1L2esZx401HGepxCSFyla6Zmy6uS8p9MhpMQ/Sheet1");
+  return await res.json();
+}
  function get(){
 
  if(document.getElementById('reg').value==='732525IT014' &&
